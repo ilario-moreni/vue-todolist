@@ -21,6 +21,10 @@
                         </div>
                     </li>
                 </ul>
+                <div>
+                    <input placeholder="Inserisci una nuova task" class="my-input" type="text" v-model="newTaskText">
+                    <button class="my-input-btn" @click="addTask">Add</button>
+                </div>
             </div>
         </div>
         <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
