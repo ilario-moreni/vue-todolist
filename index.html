@@ -8,7 +8,16 @@
         <title>Document</title>
     </head>
     <body>
-
+        <div id="app">
+            <div class="container">
+                <h1>ToDo List</h1>
+                <ul>
+                    <li v-for="(task, index) in todoList" :class="task.done ? 'taskDone' : ''">
+                        {{index + 1}} - {{task.text}}
+                    </li>
+                </ul>
+            </div>
+        </div>
         <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
         <script src="./js/script.js"></script>
     </body>

@@ -5,5 +5,26 @@
 }
 
 body{
-    background-color: red;
+    background-color: rgb(241, 241, 241);
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 20px;
+    background-color: white;
+    margin-top: 100px;
+    padding: 40px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    line-height: 50px;
+}
+
+.taskDone{
+    text-decoration: line-through;
 }
