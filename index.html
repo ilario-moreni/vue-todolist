@@ -22,7 +22,7 @@
                     </li>
                 </ul>
                 <div>
-                    <input placeholder="Inserisci una nuova task" class="my-input" type="text" v-model="newTaskText">
+                    <input placeholder="Inserisci una nuova task"  @keyup.enter="addTask" class="my-input" type="text" v-model="newTaskText">
                     <button class="my-input-btn" @click="addTask">Add</button>
                 </div>
             </div>
