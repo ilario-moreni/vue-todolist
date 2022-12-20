@@ -13,7 +13,12 @@
                 <h1>ToDo List</h1>
                 <ul>
                     <li v-for="(task, index) in todoList" :class="task.done ? 'taskDone' : ''">
-                        {{index + 1}} - {{task.text}}
+                        <div>
+                            {{index + 1}} - {{task.text}}    
+                        </div>
+                        <div>
+                            <button class="my-button" @click="deleteTask(index)">&#10005;</button>
+                        </div>
                     </li>
                 </ul>
             </div>
